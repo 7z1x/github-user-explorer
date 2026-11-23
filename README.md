@@ -2,12 +2,12 @@
 
 <p align="center">
   Android app to browse GitHub users, view profiles, and explore followers/following via the GitHub REST API.<br>
-  <strong><a href="#usage">Explore UserGithub usage Â»</a></strong>
+  <strong><a href="#usage">Explore UserGithub usage &#187;</a></strong>
   <br><br>
   <a href="https://github.com/7z1x/UserGithub/issues/new?labels=bug">Report bug</a>
-  Â·
+  &#183;
   <a href="https://github.com/7z1x/UserGithub/issues/new?labels=enhancement">Request feature</a>
-  Â·
+  &#183;
   <a href="https://github.com/7z1x/UserGithub">Repository</a>
 </p>
 
@@ -29,28 +29,28 @@ users, display detailed profiles, and list followers/following. The app is built
 
 ### How it works
 
-1. **Search** â€” `MainViewModel` calls `ApiService` via Retrofit to fetch GitHub users.
-2. **Display** â€” results are rendered in `UserAdapter` inside `MainActivity`.
-3. **Detail** â€” tapping a row opens `DetailActivity` with `DetailViewModel` loading profile data.
-4. **Follow lists** â€” `FollowFragment` + `SectionsPagerAdapter` (ViewPager2) show
+1. **Search** -- `MainViewModel` calls `ApiService` via Retrofit to fetch GitHub users.
+2. **Display** -- results are rendered in `UserAdapter` inside `MainActivity`.
+3. **Detail** -- tapping a row opens `DetailActivity` with `DetailViewModel` loading profile data.
+4. **Follow lists** -- `FollowFragment` + `SectionsPagerAdapter` (ViewPager2) show
    followers/following in swipeable tabs.
 
 ---
 
 ## Files
 
-- **[README.md](README.md)** â€” the file you are currently reading.
-- **[app/build.gradle.kts](app/build.gradle.kts)** â€” module config and dependencies.
+- **[README.md](README.md)** -- the file you are currently reading.
+- **[app/build.gradle.kts](app/build.gradle.kts)** -- module config and dependencies.
 - **app/src/main/java/com/dicoding/usergihub/**
-  - `data/response/` â€” `UserResponse.kt`, `DetailUserResponse.kt` (API models).
-  - `data/retrofit/` â€” `ApiConfig.kt`, `ApiService.kt` (Retrofit setup + endpoints).
-  - `ui/UserAdapter.kt` â€” RecyclerView adapter.
-  - `ui/main/` â€” `MainActivity.kt`, `MainViewModel.kt`.
-  - `ui/detail/` â€” `DetailActivity.kt`, `DetailViewModel.kt`.
-  - `ui/follow/` â€” `FollowFragment.kt`, `FollowViewModel.kt`, `SectionsPagerAdapter.kt`.
-- **app/src/main/res/layout/** â€” XML layouts (`activity_main`, `activity_detail`,
+  - `data/response/` -- `UserResponse.kt`, `DetailUserResponse.kt` (API models).
+  - `data/retrofit/` -- `ApiConfig.kt`, `ApiService.kt` (Retrofit setup + endpoints).
+  - `ui/UserAdapter.kt` -- RecyclerView adapter.
+  - `ui/main/` -- `MainActivity.kt`, `MainViewModel.kt`.
+  - `ui/detail/` -- `DetailActivity.kt`, `DetailViewModel.kt`.
+  - `ui/follow/` -- `FollowFragment.kt`, `FollowViewModel.kt`, `SectionsPagerAdapter.kt`.
+- **app/src/main/res/layout/** -- XML layouts (`activity_main`, `activity_detail`,
   `fragment_follow`, `item_row_user`).
-- **app/src/main/res/drawable/** â€” icons and launcher assets.
+- **app/src/main/res/drawable/** -- icons and launcher assets.
 
 ---
 
@@ -88,7 +88,7 @@ Open the project in **Android Studio**, let Gradle sync, then run on an emulator
 
 ## Usage
 
-1. Launch the app â€” the main screen lists GitHub users.
+1. Launch the app -- the main screen lists GitHub users.
 2. Tap any user to open the **detail** screen (avatar, name, followers, following).
 3. Open the **followers/following** tab and swipe between pages.
 4. Rotate the device to verify configuration changes are handled by ViewModel + LiveData.
