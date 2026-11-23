@@ -37,23 +37,6 @@ users, display detailed profiles, and list followers/following. The app is built
 
 ---
 
-## Files
-
-- **[README.md](README.md)** -- the file you are currently reading.
-- **[app/build.gradle.kts](app/build.gradle.kts)** -- module config and dependencies.
-- **app/src/main/java/com/dicoding/usergihub/**
-  - `data/response/` -- `UserResponse.kt`, `DetailUserResponse.kt` (API models).
-  - `data/retrofit/` -- `ApiConfig.kt`, `ApiService.kt` (Retrofit setup + endpoints).
-  - `ui/UserAdapter.kt` -- RecyclerView adapter.
-  - `ui/main/` -- `MainActivity.kt`, `MainViewModel.kt`.
-  - `ui/detail/` -- `DetailActivity.kt`, `DetailViewModel.kt`.
-  - `ui/follow/` -- `FollowFragment.kt`, `FollowViewModel.kt`, `SectionsPagerAdapter.kt`.
-- **app/src/main/res/layout/** -- XML layouts (`activity_main`, `activity_detail`,
-  `fragment_follow`, `item_row_user`).
-- **app/src/main/res/drawable/** -- icons and launcher assets.
-
----
-
 ## Requirements
 
 - **Android Studio** (Giraffe or newer)
